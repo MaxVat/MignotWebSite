@@ -3,9 +3,45 @@
     <head>
         <meta charset="utf-8" />
         <title>Pharmacie Lorgues</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="myScript2.js"></script>
     </head>
 
-    <body>
-      La Pharmacie des mignots caca prout
-    </body>
+    <nav>
+      <ul id="main">
+        <li>Acceuil</li>
+        <li>équipe</li>
+        <li>Planning</li>
+        <li>Marques</li>
+        <li>Services
+          <ul class="drop">
+            <div>
+            <li>Ordonnance en ligne</li>
+            <li>Livraison à domicile</li>
+            <li>Service de garde</li>
+            </div>
+          </ul>
+        </li>
+        <li>Contact</li>
+        <li></li>
+        <li></li>
+        <div id="marker"></div>
+      </ul>
+    </nav>
+
+    <div class="cycle-slideshow"
+        data-cycle-swipe=true
+        data-cycle-swipe-fx=scrollHorz
+        data-cycle-timeout=0
+        data-cycle-prev=".prev"
+        data-cycle-next=".next"
+        >
+        <div class="cycle-caption"></div>
+
+        <img src="http://malsup.github.io/images/p1.jpg">
+        <img src="http://malsup.github.io/images/p2.jpg">
+        <img src="http://malsup.github.io/images/p3.jpg">
+        <img src="http://malsup.github.io/images/p4.jpg">
+    </div>
+
 </html>
