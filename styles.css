@@ -1,11 +1,71 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-align: center;
+}
+
+#headerText {
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  text-align: left;
+  padding-top: 17px;
+  padding-left: 480px;
+}
+
+#header {
+  position: relative;
+  background-color: #374954;
+  height: 50px;
+}
+
+#logo {
+  padding-top: 10px;
+  position: absolute;
+  padding-top: 27px;
+}
+
+#logoCroix {
+  padding-top: 10px;
+  position: absolute;
+  padding-top: 0px;
+  padding-left: 842px;
+}
+
+#facebook {
+margin-left: 834px;
+margin-top: 8px;
+}
+
+#facebook:hover {
+background-color: #3E8760;
+}
+
+#twitter {
+margin-left: 10px;
+margin-top: 8px;
+}
+
+#twitter:hover {
+background-color: #3E8760;
+}
+
+#mail {
+margin-left: 10px;
+margin-top: 8px;
+}
+
+#mail:hover {
+background-color: #3E8760;
 }
 
 #main {
@@ -18,12 +78,14 @@ body {
   display: inline-block;
   padding: 0;
   margin: 50px auto;
+  margin-top: 100px;
 }
+
 #main li {
   font-size: 0.8rem;
   display: inline-block;
   position: relative;
-  padding: 15px 20px;
+  padding: 10px 20px;
   cursor: pointer;
   z-index: 5;
   min-width: 120px;
@@ -34,6 +96,7 @@ li {
 }
 
 .drop {
+  text-transform: none;
   overflow: hidden;
   list-style: none;
   position: absolute;
@@ -53,11 +116,46 @@ li {
   transition: all 0.5s 0.1s;
   position: relative;
 }
+
 .drop li {
   display: block;
   padding: 0;
   width: 100%;
   background: #3E8760;
+}
+
+.drop li:nth-child(1) {
+  border-bottom: 1px solid;
+  border-bottom-color: #374954;
+}
+
+.drop li:nth-child(2) {
+  border-bottom: 1px solid;
+  border-bottom-color: #374954;
+}
+
+.drop li:nth-child(1):hover {
+  display: block;
+  padding: 0;
+  width: 100%;
+  background: #3E8760;
+  text-decoration: underline;
+}
+
+.drop li:nth-child(2):hover {
+  display: block;
+  padding: 0;
+  width: 100%;
+  background: #3E8760;
+  text-decoration: underline;
+}
+
+.drop li:nth-child(3):hover {
+  display: block;
+  padding: 0;
+  width: 100%;
+  background: #3E8760;
+  text-decoration: underline;
 }
 
 #marker {
