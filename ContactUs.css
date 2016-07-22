@@ -96,6 +96,10 @@ li {
   margin: 0;
 }
 
+ul.drop {
+pointer-events: none;
+}
+
 .drop {
   text-transform: none;
   overflow: hidden;
@@ -106,7 +110,9 @@ li {
   left: 0;
   top: 48px;
 }
+
 .drop div {
+  pointer-events: all;
   -webkit-transform: translate(0, -100%);
   -moz-transform: translate(0, -100%);
   -ms-transform: translate(0, -100%);
@@ -230,6 +236,7 @@ li {
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }
+
 #main li:nth-child(5):hover ~ #marker {
   -webkit-transform: translate(480px, 0);
   -moz-transform: translate(480px, 0);
@@ -332,7 +339,7 @@ h1 {
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  color: #4f6fad;
+  color: #374954;
   text-align: center;
   font-weight: 100;
   font-size: 2.8125em;
@@ -486,6 +493,13 @@ form small {
 }
 
 #Acceuil {
+  text-decoration:none;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#equipe {
   text-decoration:none;
   font-family: 'Open Sans', sans-serif;
   color: white;

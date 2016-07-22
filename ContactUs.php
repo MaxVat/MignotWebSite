@@ -20,7 +20,7 @@
 
       <ul id="main">
         <li> <a id="Acceuil" href="MignotWebSite.html">Acceuil</a></li>
-        <li>équipe</li>
+        <li><a id="equipe" href="equipe.html">équipe</a></li>
         <li>Planning</li>
         <li>Marques</li>
         <li>Services
@@ -69,7 +69,7 @@
                 <li><div class="divider"></div></li>
                 <li>
                   <label for="comments">Commentaire(s)</label>
-                  <textarea cols="46" rows="3" name="comments"></textarea
+                  <textarea cols="46" rows="3" name="comments"></textarea></TD>
                 </li>
 
                 <li>
