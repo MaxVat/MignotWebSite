@@ -12,7 +12,7 @@
     <nav>
 
       <div id="header">
-        <p id="headerText">Votre Pharmacie à Lorgues du Var (83510) </p>
+        <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510) </p>
           <img id="facebook" src="img/Facebook.png" width="32px" height="32px">
           <img id="twitter" src="img/Twitter.png" width="32px" height="32px">
           <img id="mail" src="img/mail2.png" width="32px" height="32px">
@@ -113,15 +113,6 @@
         .jssorb05 .av { background-position: -67px -7px; }
         .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
 
-        /* jssor slider arrow navigator skin 12 css */
-        /*
-        .jssora12l                  (normal)
-        .jssora12r                  (normal)
-        .jssora12l:hover            (normal mouseover)
-        .jssora12r:hover            (normal mouseover)
-        .jssora12l.jssora12ldn      (mousedown)
-        .jssora12r.jssora12rdn      (mousedown)
-        */
         .jssora12l, .jssora12r {
             display: block;
             position: absolute;
@@ -172,10 +163,79 @@
         <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
     </div>
 
+<div id="topMarques">
+  NOS TOP MARQUES
+</div>
+<div id="marquesContainer">
+  <div id="logosMarques"><img src="img/allLogos2.png" /></div>
+</div>
+
+<div id="midContainer">
+
+  <div id="treeFooter"> <img src="img/treeFooter.png" /> </div>
+  <p>
+  <FONT color=#3E8760 size="5px">Votre pharmacie St Ferréol</FONT><br><br>
+  Située au 1, Avenue de Toulon dans la ville de Lorgues, la Pharmacie St Ferréol vous accueille et vous présente un large choix de produits de pharmacie et de parapharmacie.<br>
+  Notre équipe de professionnels vous reçoit et vous conseille dans le choix de gammes de produits de santé, de beauté et de bien-être pour toute la famille.<br>
+  Si vous préférez les médecines naturelles, nous pourrons vous orienter vers l’homéopathie, la phytothérapie , l'aromathérapie, et les produits diététiques.<br><br>
+  <FONT color=#3E8760 size="5px">Un large choix de produits</FONT><br><br>
+  Nous vous proposons également du matériel médical, orthopédique ainsi que des produits de maintien à domicile. Vous trouverez également des produits vétérinaires pour vos animaux de compagnie.
+  Voir nos <strong>marques</strong>.<br>
+  Pour plus d'informations, nous vous invitons à consulter les mentions légales relatives à notre pharmacie et son site internet.<br><br>
+  <FONT color=#3E8760 size="5px">Les horaires</FONT><br><br>
+  Ouverte du Lundi au Samedi de 8h45 a 19h.<br>
+  Voir notre <strong>planning</strong>.</p>
+</div>
 <footer>
 
-<div id="footer-info"> </div>
-<div id="footer-links"> </div>
+<div id="footer-info">
+  <div id="footerZone">
+        <p id="p1"> Où nous trouver ?</p>
+        <p id="p2">Pharmacie Saint Férréol<br>1 Avenue de Toulon<br>83510 Lorgues<br><br>Téléphone: 04 94 73 72 97<br>Fax: 04 94 84 36 48<br>Email: pharmacie-stferreol@outlook.fr</p>
+        <div id="block2">
+          <ul>
+            <li>Ordonnance en ligne</li>
+            <li>Livraison à domicile</li>
+            <li>Service de garde</li>
+          </ul>
+        </div>
+    <div id="Gmap">
+    <div id="map">
+      <script>
+      function initMap() {
+        var myLatLng = {lat: 43.493127, lng: 6.358338};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8PLo06eCIatA-K4ute1zwzZ96QncKiGk&signed_in=true&callback=initMap"></script>
+  </div>
+</div>
+</div>
+</div>
+<div id="footer-links">
+  <div id="links">
+    <ul>
+      <li>Mentions légales</li>
+    </ul>
+    <ul>
+      <li>©2016-2016 Pharmacie St Ferréol</li>
+    </ul>
+    <ul>
+      <li>Nous contacter</li>
+    </ul>
+  <div>
+</div>
 
 </footer>
 

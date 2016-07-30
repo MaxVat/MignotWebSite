@@ -9,7 +9,7 @@
     <nav>
 
       <div id="header">
-        <p id="headerText">Votre Pharmacie à Lorgues du Var (83510) </p>
+        <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510)</p>
           <img id="facebook" src="img/Facebook.png" width="32px" height="32px">
           <img id="twitter" src="img/Twitter.png" width="32px" height="32px">
           <img id="mail" src="img/mail2.png" width="32px" height="32px">
@@ -85,8 +85,54 @@
 
       <footer>
 
-      <div id="footer-info"> </div>
-      <div id="footer-links"> </div>
+      <div id="footer-info">
+        <div id="footerZone">
+              <p id="p1"> Où nous trouver ?</p>
+              <p id="p2">Pharmacie Saint Férréol<br>1 Avenue de Toulon<br>83510 Lorgues<br><br>Téléphone: 04 94 73 72 97<br>Fax: 04 94 84 36 48<br>Email: pharmacie-stferreol@outlook.fr</p>
+              <div id="block2">
+                <ul>
+                  <li>Ordonnance en ligne</li>
+                  <li>Livraison à domicile</li>
+                  <li>Service de garde</li>
+                </ul>
+              </div>
+          <div id="Gmap">
+          <div id="map">
+            <script>
+            function initMap() {
+              var myLatLng = {lat: 43.493127, lng: 6.358338};
+
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: myLatLng
+              });
+
+              var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Hello World!'
+              });
+            }
+          </script>
+          <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8PLo06eCIatA-K4ute1zwzZ96QncKiGk&signed_in=true&callback=initMap"></script>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div id="footer-links">
+        <div id="links">
+          <ul>
+            <li>Mentions légales</li>
+          </ul>
+          <ul>
+            <li>©2016-2016 Pharmacie St Ferréol</li>
+          </ul>
+          <ul>
+            <li>Nous contacter</li>
+          </ul>
+        <div>
+      </div>
 
       </footer>
 
