@@ -551,3 +551,210 @@ pointer-events: none;
   text-decoration: underline;
   cursor: default;
 }
+
+/* Planning */ 
+
+table {
+  max-width : 960px;
+  margin : auto ;
+  font-family: sans-serif;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  table-layout: fixed;
+  margin-bottom: 30px;
+}
+table thead {
+  height : 65px;
+}
+table thead tr th {
+  background: #626E7E;
+  color: #d1d5db;
+  padding: 0.5em;
+  overflow: hidden;
+}
+table thead tr th:first-child {
+  border-radius: 3px 0 0 0;
+}
+table thead tr th:last-child {
+  border-radius: 0 3px  0 0;
+}
+table thead tr th .day {
+  display: block;
+  font-size: 1.2em;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 5px;
+  padding: 5px;
+  line-height: 1.8;
+}
+table thead tr th .day.active {
+  background: #d1d5db;
+  color: #626E7E;
+}
+table thead tr th .short {
+  display: none;
+}
+table thead tr th i {
+  vertical-align: middle;
+  font-size: 2em;
+}
+table tbody tr {
+  background: #d1d5db;
+}
+table tbody tr:nth-child(n) td:nth-child(1) {
+  background-color : #c8cdd4;
+  color: #626E7E;
+}
+
+table tbody tr:nth-child(2n) td:nth-child(1) {
+  background-color : #d1d5db;
+  color: #626E7E;
+}
+
+table tbody tr:nth-child(1) td:nth-child(1) {
+  border-top : solid #d1d5db 1px;
+}
+table tbody tr:nth-child(5) td:nth-child(1) {
+  border-top : solid #d1d5db 1px;
+}
+table tbody tr:nth-child(7) td:nth-child(1) {
+  border-top : solid #d1d5db 1px;
+}
+table tbody tr:nth-child(11) td:nth-child(1) {
+  border-top : solid #d1d5db 1px;
+}
+
+table tbody tr:nth-child(4) td {
+  border-bottom: 1px solid #626E7E;
+}
+table tbody tr:nth-child(6) td {
+  border-bottom: 1px solid #626E7E;
+}
+table tbody tr:nth-child(10) td {
+  border-bottom: 1px solid #626E7E;
+}
+table tbody tr:nth-child(n) td.ouvert{
+  background-color: #82C46C;
+}
+
+table tbody tr:nth-child(2n) td.ouvert{
+  background-color: #9FE855;
+}
+
+table tbody tr:nth-child(n).ferme {
+  background-color: #FF6347;
+}
+table tbody tr:nth-child(2n).ferme {
+  background-color: #FF7F50;
+}
+table tbody tr:nth-child(n) td.ferme {
+  background-color: #FF6347;
+}
+table tbody tr:nth-child(2n) td.ferme{
+   background-color: #FF7F50;
+}
+table tbody tr:nth-child(5) td{
+  border-bottom : 1px solid #626E7E ;
+}
+table tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #626E7E;
+  position: relative;
+  height: 42px;
+  cursor: pointer;
+}
+table tbody tr td:last-child {
+  border-right: 1px solid #626E7E;
+}
+table tbody tr td.hour {
+  font-size: 2em;
+  padding: 0;
+  color: #626E7E;
+  background: #fff;
+  border-bottom: 1px solid #626E7E;
+  border-collapse: separate;
+  min-width: 100px;
+  cursor: default;
+}
+table tbody tr td.hour span {
+  display: block;
+}
+table tbody tr td.hour2 {
+
+  font-size: 2em;
+  padding: 0;
+  color: #626E7E;
+  background: #fff;
+  border-bottom: 1px solid #626E7E;
+  border-collapse: separate;
+  min-width: 100px;
+  cursor: default;
+}
+table tbody tr td.hour2 span {
+  display: block;
+}
+@media (max-width: 60em) {
+  table thead tr th .long {
+    display: none;
+  }
+  table thead tr th .short {
+    display: block;
+  }
+  table tbody tr td.hour span {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+  }
+}
+@media (max-width: 27em) {
+  table thead tr th {
+    font-size: 65%;
+  }
+  table thead tr th .day {
+    display: block;
+    font-size: 1.2em;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto 5px;
+    padding: 5px;
+  }
+  table thead tr th .day.active {
+    background: #d1d5db;
+    color: #626E7E;
+  }
+  table tbody tr td.hour {
+    font-size: 1.7em;
+  }
+  table tbody tr td.hour span {
+    transform: translateY(16px) rotate(270deg);
+    -webkit-transform: translateY(16px) rotate(270deg);
+    -moz-transform: translateY(16px) rotate(270deg);
+  }
+}
+
+div.semaines {
+    border-radius: 3px 0 0 0;
+    height:65px;
+    width :960px;
+    margin:auto;
+    background: #626E7E;
+    font-family: sans-serif;
+    display: flex;
+}
+div.semaines div.semaine{
+  width :25%;
+  height :100%;
+  padding: 0.5em;
+  border-left: 1px solid #d1d5db;
+}
+div.semaines div.semaine div.text{
+  width :100%;
+  height :100%;
+  color: #d1d5db;
+  font-size: 15px;
+  padding-top: 1em;
+}
