@@ -311,7 +311,7 @@ div, textarea, input {
 .row.header {
   min-height: 200px;
   border-bottom: 1px solid #ccc;
-  background: url(img/equipe2.png);
+  background: url(../img/equipe2.png);
   background-repeat: no-repeat;
   color: #fff;
 }

@@ -5,7 +5,7 @@ require 'header.php'
     <head>
         <meta charset="utf-8" />
         <title>Pharmacie Lorgues</title>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="../css/styles.css" />
         <script src="myScript.js"></script>
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
@@ -15,29 +15,29 @@ require 'header.php'
 
       <div id="header">
         <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510) </p>
-          <img id="facebook" src="img/Facebook.png" width="32px" height="32px">
-          <img id="twitter" src="img/Twitter.png" width="32px" height="32px">
-          <img id="mail" src="img/mail2.png" width="32px" height="32px">
+          <img id="facebook" src="../img/Facebook.png" width="32px" height="32px">
+          <img id="twitter" src="../img/Twitter.png" width="32px" height="32px">
+          <img id="mail" src="../img/mail2.png" width="32px" height="32px">
       </div>
 
-      <img id="logo" src="img/logoPharmacie.jpg" />
-      <img id="logoCroix" src="img/logoCroix200px.png" />
+      <img id="logo" src="../img/logoPharmacie.jpg" />
+      <img id="logoCroix" src="../img/logoCroix200px.png" />
 
       <ul id="main">
-        <li> <a class="Acceuil" href="MignotWebSite.html">Acceuil</a></li>
-        <li><a id="equipe" href="equipe.html">équipe</a></li>
-        <li>Planning</li>
+        <li> <a class="Acceuil" href="../MignotWebSite.html">Acceuil</a></li>
+        <li><a id="equipe" href="../equipe.html">équipe</a></li>
+        <li><a id="Planning" href="#">Planning</a></li>
         <li>Marques</li>
         <li>Services
           <ul class="drop">
             <div>
-            <li>Ordonnance en ligne</li>
-            <li>Livraison à domicile</li>
-            <li>Service de garde</li>
+            <li><a href="../Ordonnance_en_ligne/index.php">Ordonnance en ligne</a></li>
+            <li><a href="../services/livraison.html">Livraison à domicile</a></li>
+            <li><a href="../services/garde.html">Service de garde</a></li>
             </div>
           </ul>
         </li>
-        <li> <a id="ContactUs" href="ContactUs.php">Contact</a></li>
+        <li> <a id="ContactUs" href="../ContactUs/ContactUs.php">Contact</a></li>
         <li></li>
         <li></li>
         <div id="marker"></div>
@@ -354,9 +354,9 @@ elseif ($semainep==1){
         <p id="p2">Pharmacie Saint Férréol<br>1 Avenue de Toulon<br>83510 Lorgues<br><br>Téléphone: 04 94 73 72 97<br>Fax: 04 94 84 36 48<br>Email: pharmacie-stferreol@outlook.fr</p>
         <div id="block2">
           <ul>
-            <li>Ordonnance en ligne</li>
-            <li>Livraison à domicile</li>
-            <li>Service de garde</li>
+           <li><a href="../Ordonnance_en_ligne/index.php">Ordonnance en ligne</a></li>
+            <li><a href="../services/livraison.html">Livraison à domicile</a></li>
+            <li><a href="../services/garde.html">Service de garde</a></li>
           </ul>
         </div>
     <div id="Gmap">
@@ -386,7 +386,7 @@ elseif ($semainep==1){
 <div id="footer-links">
   <div id="links">
     <ul>
-      <li>Mentions légales</li>
+      <li><a id="Mentions" href="../mentions_legales.html">Mentions légales</a>Mentions légales</li>
     </ul>
     <ul>
       <li>©2016-2016 Pharmacie St Ferréol</li>
