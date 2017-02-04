@@ -26,7 +26,7 @@
         <li>Services
           <ul class="drop">
             <div>
-              <li><a href="../Ordonnance_en_ligne/index.php">Ordonnance en ligne</a></li>
+              <li><a href="../services/ordonnance.html">Ordonnance en ligne</a></li>
               <li><a href="../services/livraison.html">Livraison à domicile</a></li>
               <li><a href="../services/garde.html">Service de garde</a></li>
             </div>
@@ -46,7 +46,7 @@
             <h1></h1>
           </div>
           <div class="row body">
-            <form action="#">
+            <form action="#" method="POST">
               <ul>
 
                 <li>

@@ -31,7 +31,7 @@ require 'header.php'
         <li>Services
           <ul class="drop">
             <div>
-            <li><a href="../Ordonnance_en_ligne/index.php">Ordonnance en ligne</a></li>
+            <li><a href="../services/ordonnance.html">Ordonnance en ligne</a></li>
             <li><a href="../services/livraison.html">Livraison à domicile</a></li>
             <li><a href="../services/garde.html">Service de garde</a></li>
             </div>
@@ -354,7 +354,7 @@ elseif ($semainep==1){
         <p id="p2">Pharmacie Saint Férréol<br>1 Avenue de Toulon<br>83510 Lorgues<br><br>Téléphone: 04 94 73 72 97<br>Fax: 04 94 84 36 48<br>Email: pharmacie-stferreol@outlook.fr</p>
         <div id="block2">
           <ul>
-           <li><a href="../Ordonnance_en_ligne/index.php">Ordonnance en ligne</a></li>
+           <li><a href="../services/ordonnance.html">Ordonnance en ligne</a></li>
             <li><a href="../services/livraison.html">Livraison à domicile</a></li>
             <li><a href="../services/garde.html">Service de garde</a></li>
           </ul>
