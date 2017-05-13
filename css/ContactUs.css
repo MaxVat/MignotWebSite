@@ -41,32 +41,21 @@ body {
   padding-left: 842px;
 }
 
-#facebook {
-margin-left: 834px;
-margin-top: 8px;
+.fa-facebook:hover {
+  color: #3B5998;
 }
 
-#facebook:hover {
-  text-decoration: underline;
-background-color: #3E8760;
+.fa-facebook {
+  margin-top: 7px;
+  margin-left: 800px;
 }
 
-#twitter {
-margin-left: 10px;
-margin-top: 8px;
+.fa-twitter:hover {
+  color: #33CCFF;
 }
 
-#twitter:hover {
-background-color: #3E8760;
-}
-
-#mail {
-margin-left: 10px;
-margin-top: 8px;
-}
-
-#mail:hover {
-background-color: #3E8760;
+.fa-envelope-open-o:hover {
+  color: #DD4B39;
 }
 
 #main {
@@ -109,6 +98,11 @@ pointer-events: none;
   width: 100%;
   left: 0;
   top: 48px;
+}
+
+.drop div li a {
+  text-decoration : none;
+  color :white;
 }
 
 .drop div {
@@ -595,6 +589,20 @@ form small {
 }
 
 #equipe {
+  text-decoration:none;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#Mentions {
+  text-decoration:none;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#Planning {
   text-decoration:none;
   font-family: 'Open Sans', sans-serif;
   color: white;

@@ -11,6 +11,10 @@ body {
   text-align: center;
 }
 
+#textBody {
+  text-align: left;
+}
+
 #headerText {
   position: absolute;
   font-family: 'Open Sans', sans-serif;
@@ -41,32 +45,30 @@ body {
   padding-left: 842px;
 }
 
-#facebook {
-margin-left: 834px;
-margin-top: 8px;
+#contacter {
+  color: black;
 }
 
-#facebook:hover {
+#contacter:hover {
+  color: black;
   text-decoration: underline;
-background-color: #3E8760;
 }
 
-#twitter {
-margin-left: 10px;
-margin-top: 8px;
+.fa-facebook:hover {
+  color: #3B5998;
 }
 
-#twitter:hover {
-background-color: #3E8760;
+.fa-facebook {
+  margin-top: 7px;
+  margin-left: 800px;
 }
 
-#mail {
-margin-left: 10px;
-margin-top: 8px;
+.fa-twitter:hover {
+  color: #33CCFF;
 }
 
-#mail:hover {
-background-color: #3E8760;
+.fa-envelope-open-o:hover {
+  color: #DD4B39;
 }
 
 #main {
@@ -124,7 +126,7 @@ pointer-events: none;
   position: relative;
 }
 .drop div li a {
-  text-decoration : none; 
+  text-decoration : none;
   color :white;
 }
 .drop li {
@@ -383,6 +385,7 @@ pointer-events: none;
   color: #374954;
   font-size: 30px;
   border-top: 1px solid grey;
+  padding-top: 10px;
 }
 
 #marquesContainer {
@@ -569,7 +572,7 @@ color: white;
   cursor: default;
 }
 
-/* Planning */ 
+/* Planning */
 
 table {
   max-width : 960px;
@@ -775,14 +778,15 @@ div.semaines div.semaine div.text{
   font-size: 15px;
   padding-top: 1em;
 }
+
 /*livraison*/
+
 .livraison{
   margin : auto;
     width: 960px;
     height: 401px;
-    border-bottom :  1px solid grey;
-
 }
+
 .perimeter{
   display : flex ;
   width : 50%;
@@ -802,8 +806,10 @@ div.semaines div.semaine div.text{
   color : #636363;
   height : 50px;
   width : 100%;
-  border-bottom : 1px solid grey;
+  border-top : 1px solid grey;
+  padding-top: 10px;
 }
+
 .livraisoninfo .header a {
   text-decoration : none;
 }
@@ -817,11 +823,8 @@ div.semaines div.semaine div.text{
 
 .ordonnance{
   margin : auto;
-    width: 960px;
-    height: 301px;
-    border-bottom :  1px solid grey;
-
 }
+
 .ordonnanceinfo{
   padding-top : 20px;
   margin:auto ;
@@ -833,6 +836,8 @@ div.semaines div.semaine div.text{
   color : #636363;
   height : 50px;
   width : 100%;
+  padding-top: 10px;
+  border-top: 1px solid grey;
  /* border-bottom : 1px solid grey;*/
 }
 .ordonnanceinfo .header a {
@@ -877,7 +882,6 @@ div.semaines div.semaine div.text{
   font-size : 1.2em;
   height : 380px;
   width : 100%;
-  border: 1px solid grey;
   margin:auto;
 }
 .ordonnanceinfo .row-garde .sub-row1{

@@ -41,32 +41,21 @@ body {
   padding-left: 842px;
 }
 
-#facebook {
-margin-left: 834px;
-margin-top: 8px;
+.fa-facebook:hover {
+  color: #3B5998;
 }
 
-#facebook:hover {
-  text-decoration: underline;
-background-color: #3E8760;
+.fa-facebook {
+  margin-top: 7px;
+  margin-left: 800px;
 }
 
-#twitter {
-margin-left: 10px;
-margin-top: 8px;
+.fa-twitter:hover {
+  color: #33CCFF;
 }
 
-#twitter:hover {
-background-color: #3E8760;
-}
-
-#mail {
-margin-left: 10px;
-margin-top: 8px;
-}
-
-#mail:hover {
-background-color: #3E8760;
+.fa-envelope-open-o:hover {
+  color: #DD4B39;
 }
 
 #main {
@@ -125,7 +114,7 @@ pointer-events: none;
 }
 
 .drop div li a {
-  text-decoration : none; 
+  text-decoration : none;
   color :white;
 }
 
@@ -608,7 +597,7 @@ color: white;
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-align: center;
-} 
+}
 #equipe {
   text-decoration:none;
   font-family: 'Open Sans', sans-serif;

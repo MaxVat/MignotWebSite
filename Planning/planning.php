@@ -5,7 +5,8 @@ require 'header.php'
     <head>
         <meta charset="utf-8" />
         <title>Pharmacie Lorgues</title>
-        <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+        <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" type="text/css" href="../css/styles.css" />
         <script src="myScript.js"></script>
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
@@ -15,9 +16,9 @@ require 'header.php'
 
       <div id="header">
         <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510) </p>
-          <img id="facebook" src="../img/Facebook.png" width="32px" height="32px">
-          <img id="twitter" src="../img/Twitter.png" width="32px" height="32px">
-          <img id="mail" src="../img/mail2.png" width="32px" height="32px">
+        <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
+        <i class="fa fa-envelope-open-o fa-2x fa-fw" aria-hidden="true"></i>
       </div>
 
       <img id="logo" src="../img/logoPharmacie.jpg" />
@@ -130,13 +131,13 @@ require 'header.php'
    <tr class="ferme">
       <td >14:30</td>
       <td></td>
-      <td ></td> 
+      <td ></td>
       <td ></td>
       <td ></td>
       <td ></td>
       <td ></td>
 
-    </tr> 
+    </tr>
     <tr class="ouvert">
       <td >14:30</td>
       <td class="ouvert"></td>
@@ -155,9 +156,9 @@ require 'header.php'
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
- 
-    </tr> 
-    
+
+    </tr>
+
     <tr class="ouvert">
       <td ></td>
       <td class="ouvert"></td>
@@ -166,7 +167,7 @@ require 'header.php'
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
- 
+
     </tr>
     <tr class="ouvert">
       <td >19:00</td>
@@ -275,13 +276,13 @@ elseif ($semainep==1){
    <tr class="ferme">
       <td>14:30</td>
       <td></td>
-      <td></td> 
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
 
-    </tr> 
+    </tr>
     <tr>
       <td>14:30</td>
       <td class="ouvert"></td>
@@ -300,11 +301,11 @@ elseif ($semainep==1){
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ferme"></td>
- 
-    </tr> 
-    
+
+    </tr>
+
     <tr>
-    
+
       <td></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
@@ -312,7 +313,7 @@ elseif ($semainep==1){
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ferme"></td>
- 
+
     </tr>
     <tr>
       <td >19:00</td>
@@ -326,22 +327,22 @@ elseif ($semainep==1){
 
   </tbody>
 </table>
-<?php 
+<?php
   }
 ?>
 <div class="semaines">
-  <?php  
-  for ($i=0; $i < 4; $i++) { 
+  <?php
+  for ($i=0; $i < 4; $i++) {
   ?>
     <div class="semaine">
         <div class="text">
-          <a href="planning.php?date=<?= $semaine_nav->format('Y-m-d'); ?>"> 
+          <a href="planning.php?date=<?= $semaine_nav->format('Y-m-d'); ?>">
           <?= "Lundi ",$semaine_nav->format('d-m-Y');?>
           </a>
         </div>
     </div>
   <?php
-  $semaine_nav=$semaine_nav->add(new DateInterval('P7D')); 
+  $semaine_nav=$semaine_nav->add(new DateInterval('P7D'));
   }
   ?>
 </div>
@@ -389,10 +390,10 @@ elseif ($semainep==1){
       <li><a id="Mentions" href="../mentions_legales.html">Mentions légales</a>Mentions légales</li>
     </ul>
     <ul>
-      <li>©2016-2016 Pharmacie St Ferréol</li>
+      <li>©2016-2017 Pharmacie St Ferréol</li>
     </ul>
     <ul>
-      <li>Nous contacter</li>
+      <li><a id="Mentions" href="../ContactUs/ContactUs.php">Nous contacter</li>
     </ul>
   <div>
 </div>

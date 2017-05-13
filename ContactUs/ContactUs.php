@@ -4,15 +4,16 @@
         <meta charset="utf-8" />
         <title>Contact</title>
         <link rel="stylesheet" type="text/css" href="../css/ContactUs.css" />
+        <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
 
     <nav>
 
       <div id="header">
         <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510)</p>
-          <img id="facebook" src="../img/Facebook.png" width="32px" height="32px">
-          <img id="twitter" src="../img/Twitter.png" width="32px" height="32px">
-          <img id="mail" src="../img/mail2.png" width="32px" height="32px">
+        <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
+        <i class="fa fa-envelope-open-o fa-2x fa-fw" aria-hidden="true"></i>
       </div>
 
       <img id="logo" src="../img/logoPharmacie.jpg" />
@@ -73,7 +74,7 @@
                 </li>
 
                 <li>
-                  <input class="btn btn-submit" type="submit" value="Submit" />
+                  <input class="btn btn-submit" type="submit" value="Envoyer" />
                   <small>ou appuyer sur <strong>ENTRER</strong></small>
                 </li>
 
@@ -126,10 +127,10 @@
             <li><a id="Mentions" href="../mentions_legales.html">Mentions légales</a></li>
           </ul>
           <ul>
-            <li>©2016-2016 Pharmacie St Ferréol</li>
+            <li>©2016-2017 Pharmacie St Ferréol</li>
           </ul>
           <ul>
-            <li>Nous contacter</li>
+            <li><a id="Mentions" href="ContactUs/ContactUs.php">Nous contacter</li>
           </ul>
         <div>
       </div>
