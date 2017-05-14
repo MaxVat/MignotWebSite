@@ -5,27 +5,24 @@ require 'header.php'
     <head>
         <meta charset="utf-8" />
         <title>Pharmacie Lorgues</title>
-        <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
-       <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-        <script src="myScript.js"></script>
-        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+          <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
 
     <nav>
 
       <div id="header">
         <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510) </p>
-        <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
-        <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
-        <i class="fa fa-envelope-open-o fa-2x fa-fw" aria-hidden="true"></i>
+          <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
+          <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
+          <i class="fa fa-envelope-open-o fa-2x fa-fw" aria-hidden="true"></i>
       </div>
 
       <img id="logo" src="../img/logoPharmacie.jpg" />
       <img id="logoCroix" src="../img/logoCroix200px.png" />
 
       <ul id="main">
-        <li> <a class="Acceuil" href="../MignotWebSite.html">Acceuil</a></li>
+        <li> <a id="Acceuil" href="../MignotWebSite.html">Acceuil</a></li>
         <li><a id="equipe" href="../equipe.html">équipe</a></li>
         <li><a id="Planning" href="#">Planning</a></li>
         <li>Marques</li>
@@ -51,7 +48,7 @@ require 'header.php'
   <table>
   <thead>
     <tr>
-      <th>Jour</th>
+      <th></th>
       <th>
         <span class="long">Lundi</span>
         <span class="short">Lun</span>
@@ -89,7 +86,7 @@ require 'header.php'
       <td class="ouvert"></td>
     </tr>
     <tr>
-      <td ></td>
+      <td >10:00</td>
       <td class="ferme"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
@@ -99,7 +96,7 @@ require 'header.php'
 
     </tr>
     <tr>
-      <td ></td>
+      <td >11:00</td>
       <td class="ferme"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
@@ -131,13 +128,13 @@ require 'header.php'
    <tr class="ferme">
       <td >14:30</td>
       <td></td>
-      <td ></td>
+      <td ></td> 
       <td ></td>
       <td ></td>
       <td ></td>
       <td ></td>
 
-    </tr>
+    </tr> 
     <tr class="ouvert">
       <td >14:30</td>
       <td class="ouvert"></td>
@@ -149,25 +146,45 @@ require 'header.php'
 
     </tr>
     <tr class="ouvert">
-      <td ></td>
+      <td >15:00</td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
-
-    </tr>
-
+ 
+    </tr> 
     <tr class="ouvert">
-      <td ></td>
+      <td >16:00</td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
-
+ 
+    </tr> 
+    <tr class="ouvert">
+      <td >17:00</td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+ 
+    </tr> 
+    
+    <tr class="ouvert">
+      <td >18:00</td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+ 
     </tr>
     <tr class="ouvert">
       <td >19:00</td>
@@ -188,7 +205,7 @@ elseif ($semainep==1){
    <table>
   <thead>
     <tr>
-      <th>Jour</th>
+      <th></th>
       <th>
         <!-- <span class="day">1</span> -->
         <span class="long">Lundi</span>
@@ -276,13 +293,13 @@ elseif ($semainep==1){
    <tr class="ferme">
       <td>14:30</td>
       <td></td>
-      <td></td>
+      <td></td> 
       <td></td>
       <td></td>
       <td></td>
       <td></td>
 
-    </tr>
+    </tr> 
     <tr>
       <td>14:30</td>
       <td class="ouvert"></td>
@@ -301,11 +318,11 @@ elseif ($semainep==1){
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ferme"></td>
-
-    </tr>
-
+ 
+    </tr> 
+    
     <tr>
-
+    
       <td></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
@@ -313,7 +330,7 @@ elseif ($semainep==1){
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ferme"></td>
-
+ 
     </tr>
     <tr>
       <td >19:00</td>
@@ -327,22 +344,22 @@ elseif ($semainep==1){
 
   </tbody>
 </table>
-<?php
+<?php 
   }
 ?>
 <div class="semaines">
-  <?php
-  for ($i=0; $i < 4; $i++) {
+  <?php  
+  for ($i=0; $i < 4; $i++) { 
   ?>
     <div class="semaine">
         <div class="text">
-          <a href="planning.php?date=<?= $semaine_nav->format('Y-m-d'); ?>">
+          <a href="planning.php?date=<?= $semaine_nav->format('Y-m-d'); ?>"> 
           <?= "Lundi ",$semaine_nav->format('d-m-Y');?>
           </a>
         </div>
     </div>
   <?php
-  $semaine_nav=$semaine_nav->add(new DateInterval('P7D'));
+  $semaine_nav=$semaine_nav->add(new DateInterval('P7D')); 
   }
   ?>
 </div>
@@ -390,10 +407,10 @@ elseif ($semainep==1){
       <li><a id="Mentions" href="../mentions_legales.html">Mentions légales</a>Mentions légales</li>
     </ul>
     <ul>
-      <li>©2016-2017 Pharmacie St Ferréol</li>
+      <li>©2016-2016 Pharmacie St Ferréol</li>
     </ul>
     <ul>
-      <li><a id="Mentions" href="../ContactUs/ContactUs.php">Nous contacter</li>
+      <li>Nous contacter</li>
     </ul>
   <div>
 </div>
