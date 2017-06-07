@@ -627,6 +627,8 @@ table thead tr th i {
 
 table tbody tr:nth-child(n) td:nth-child(1) {
   /*background-color : #c8cdd4; */
+  padding-bottom : 20px;
+  text-align: right;
   background-color : white;
  /* color: #626E7E;*/
  color : black;
@@ -635,6 +637,8 @@ table tbody tr:nth-child(n) td:nth-child(1) {
 table tbody tr:nth-child(2n) td:nth-child(1) {
   /*background-color : #d1d5db;
   color: #626E7E;*/
+    padding-bottom : 20px;
+  text-align: right;
   background-color : white;
   color : black;
 }

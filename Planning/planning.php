@@ -22,7 +22,7 @@ require 'header.php'
       <img id="logoCroix" src="../img/logoCroix200px.png" />
 
       <ul id="main">
-        <li> <a id="Acceuil" href="../MignotWebSite.html">Acceuil</a></li>
+        <li> <a id="Acceuil" href="../index.html">Acceuil</a></li>
         <li><a id="equipe" href="../equipe.html">équipe</a></li>
         <li><a id="Planning" href="#">Planning</a></li>
         <li>Marques</li>
@@ -104,16 +104,6 @@ require 'header.php'
       <td class="ouvert"></td>
       <td class="ouvert"></td>
     </tr>
-    <tr>
-      <td >12:00</td>
-      <td class="ferme"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-
-    </tr>
 
     <tr class="ferme">
       <td >12:00</td>
@@ -126,7 +116,7 @@ require 'header.php'
 
     </tr>
    <tr class="ferme">
-      <td >14:30</td>
+      <td >13:00</td>
       <td></td>
       <td ></td> 
       <td ></td>
@@ -188,12 +178,6 @@ require 'header.php'
     </tr>
     <tr class="ouvert">
       <td >19:00</td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
     </tr>
 
   </tbody>
@@ -250,7 +234,7 @@ elseif ($semainep==1){
       <td class="ouvert"></td>
     </tr>
     <tr>
-      <td></td>
+      <td>10:00</td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
@@ -260,23 +244,13 @@ elseif ($semainep==1){
 
     </tr>
     <tr>
-      <td></td>
+      <td>11:00</td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
-    </tr>
-    <tr class="ouvert">
-      <td>12:00</td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-      <td class="ouvert"></td>
-
     </tr>
 
     <tr class="ferme">
@@ -290,8 +264,9 @@ elseif ($semainep==1){
       <td></td>
 
     </tr>
+
    <tr class="ferme">
-      <td>14:30</td>
+      <td>13:00</td>
       <td></td>
       <td></td> 
       <td></td>
@@ -311,7 +286,7 @@ elseif ($semainep==1){
 
     </tr>
     <tr>
-      <td></td>
+      <td>15:00</td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
@@ -323,7 +298,7 @@ elseif ($semainep==1){
     
     <tr>
     
-      <td></td>
+      <td>16:00</td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
@@ -332,14 +307,31 @@ elseif ($semainep==1){
       <td class="ferme"></td>
  
     </tr>
-    <tr>
-      <td >19:00</td>
+     <tr>
+    
+      <td>17:00</td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ferme"></td>
+ 
+    </tr>
+     <tr>
+    
+      <td>18:00</td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ouvert"></td>
+      <td class="ferme"></td>
+ 
+    </tr>
+
+    <tr>
+      <td >19:00</td>
     </tr>
 
   </tbody>
@@ -404,7 +396,7 @@ elseif ($semainep==1){
 <div id="footer-links">
   <div id="links">
     <ul>
-      <li><a id="Mentions" href="../mentions_legales.html">Mentions légales</a>Mentions légales</li>
+      <li><a id="Mentions" href="../mentions_legales.html">Mentions légales</a></li>
     </ul>
     <ul>
       <li>©2016-2016 Pharmacie St Ferréol</li>

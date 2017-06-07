@@ -4,7 +4,7 @@ $DB = new DB();
 $alphabet = array();
 $date = date("d-m-Y");
 $heure = date("H:i"); 
-$depart = new DateTime('2016-04-25 00:00:00');
+$depart = new DateTime('2017-04-24 00:00:00');
 
 
 		if(isset($_GET["date"]))
@@ -23,8 +23,9 @@ $depart = new DateTime('2016-04-25 00:00:00');
 $diff = $depart->diff($aujourdhui);  /*difference entre Lundi 25 avril et aujourdhui*/
 
 $nb_jours = $diff->format('%a'); /*a : nombre total en jours*/
+echo $nb_jours;
 
-$nb_semaines=variant_int($nb_jours/7); /*nombre de semaines (partie entiere)*/
+$nb_semaines=intval($nb_jours/7); /*nombre de semaines (partie entiere)*/
 
 $semaine= clone $depart; /*clone copie le même type d'objet*/
 
@@ -41,7 +42,7 @@ $diff2 = $depart->diff($aujourdhui_nav);  /*difference entre Lundi 25 avril et a
 
 $nb_jours_nav = $diff2->format('%a'); /*a : nombre total en jours*/
 
-$nb_semaines_nav=variant_int($nb_jours_nav/7); /*nombre de semaines (partie entiere)*/
+$nb_semaines_nav=intval($nb_jours_nav/7); /*nombre de semaines (partie entiere)*/
 
 $semaine_nav= clone $depart; /*clone copie le même type d'objet*/
 
