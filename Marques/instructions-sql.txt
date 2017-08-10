@@ -1,0 +1,38 @@
+Dans bdd 'pharmacie' :
+
+Faire :
+
+CREATE TABLE marque
+NOM VARCHAR 255
+IMAGE LONGBLOB
+
+Puis mettre les images dans "wamp64/tmp/marques"
+
+Et executer :
+
+INSERT INTO marque(NOM,IMAGE) 
+VALUES('Advantage_Advantix_Advocate', LOAD_FILE('C:/wamp64/tmp/marques/adv.jpg')),
+('Advantage Advantix Advocate', LOAD_FILE('C:/wamp64/tmp/marques/adv.jpg')),
+('Eau Thermale Avène', LOAD_FILE('C:/wamp64/tmp/marques/avene.jpg')),
+('Bioderma', LOAD_FILE('C:/wamp64/tmp/marques/bioderma.jpg')),
+('Biogaran', LOAD_FILE('C:/wamp64/tmp/marques/biogaran.jpg')),
+('Cicabiafine', LOAD_FILE('C:/wamp64/tmp/marques/cicabiafine.jpg')),
+('Dodie', LOAD_FILE('C:/wamp64/tmp/marques/dodie.jpg')),
+('Eucerin', LOAD_FILE('C:/wamp64/tmp/marques/eucerin.jpg')),
+('Frontline', LOAD_FILE('C:/wamp64/tmp/marques/frontline.jpg')),
+('Gifrer', LOAD_FILE('C:/wamp64/tmp/marques/gifrer.jpg')),
+('G.U.M', LOAD_FILE('C:/wamp64/tmp/marques/gum.jpg')),
+('Hydralin', LOAD_FILE('C:/wamp64/tmp/marques/hydralin.jpg')),
+('La Roche Posay', LOAD_FILE('C:/wamp64/tmp/marques/larocheposay.jpg')),
+('Mustela', LOAD_FILE('C:/wamp64/tmp/marques/mustela.jpg')),
+('Nutergia', LOAD_FILE('C:/wamp64/tmp/marques/nutergia.jpg')),
+('Puressentiel', LOAD_FILE('C:/wamp64/tmp/marques/puressentiel.jpg')),
+('Rogé Cavaillès', LOAD_FILE('C:/wamp64/tmp/marques/rogercavailles.jpg')),
+('Roger Gallet', LOAD_FILE('C:/wamp64/tmp/marques/rogergallet.jpg')),
+('Saforelle', LOAD_FILE('C:/wamp64/tmp/marques/saforelle.jpg')),
+('Sanoflore', LOAD_FILE('C:/wamp64/tmp/marques/sanoflore.jpg')),
+('Scalibor', LOAD_FILE('C:/wamp64/tmp/marques/scalibor.jpg')),
+('Scholl', LOAD_FILE('C:/wamp64/tmp/marques/scholl.jpg')),
+('Topicrem', LOAD_FILE('C:/wamp64/tmp/marques/topicrem.jpg')),
+('Urgo', LOAD_FILE('C:/wamp64/tmp/marques/urgo.jpg')),
+('Vichy', LOAD_FILE('C:/wamp64/tmp/marques/vichy.jpg'));
