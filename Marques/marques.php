@@ -9,38 +9,37 @@ require 'header.php'
           <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <nav>
 
-      <div id="header">
-        <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510) </p>
-          <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
-          <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
-          <i class="fa fa-envelope-open-o fa-2x fa-fw" aria-hidden="true"></i>
-      </div>
+<nav>
+  <div id="header">
+    <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510) </p>
+      <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
+      <i class="fa fa-envelope-open-o fa-2x fa-fw" aria-hidden="true"></i>
+  </div>
 
-      <img id="logo" src="../img/logoPharmacie.jpg" />
-      <img id="logoCroix" src="../img/logoCroix200px.png" />
+  <img id="logo" src="../img/logoPharmacie.jpg" />
+  <img id="logoCroix" src="../img/logoCroix200px.png" />
 
-      <ul id="main">
-        <li> <a id="Acceuil" href="../index.html">Acceuil</a></li>
-        <li><a id="equipe" href="../equipe.html">équipe</a></li>
-        <li><a id="Planning" href="#">Planning</a></li>
-        <li>Marques</li>
-        <li>Services
-          <ul class="drop">
-            <div>
-            <li><a href="../services/ordonnance.html">Ordonnance en ligne</a></li>
-            <li><a href="../services/livraison.html">Livraison à domicile</a></li>
-            <li><a href="../services/garde.html">Service de garde</a></li>
-            </div>
-          </ul>
-        </li>
-        <li> <a id="ContactUs" href="../ContactUs/ContactUs.php">Contact</a></li>
-        <li></li>
-        <li></li>
-        <div id="marker"></div>
+  <ul id="main">
+    <li> <a id="Acceuil" href="../index.html">Acceuil</a></li>
+    <li><a id="equipe" href="../equipe.html">équipe</a></li>
+    <li><a id="Planning" href="../Planning/planning.php">Planning</a></li>
+    <li><a id="Marques" href="../Marques/marques.php">Marques</a></li>
+    <li id="Services">Services
+      <ul class="drop">
+        <div>
+        <li><a href="../services/ordonnance.html">Ordonnance en ligne</a></li>
+        <li><a href="../services/livraison.html">Livraison à domicile</a></li>
+        <li><a href="../services/garde.html">Service de garde</a></li>
+        </div>
       </ul>
-    </nav>
+    </li>
+    <li> <a id="ContactUs" href="../ContactUs/ContactUs.php">Contact</a></li>
+    <li></li>
+    <li></li>
+    <div id="marker"></div>
+  </ul>
+</nav>
 
 		<div class="alphabet">
 			<?php
@@ -52,8 +51,8 @@ require 'header.php'
 		</div>
 
 		<div class="wrap">
-			
-			<?php 
+
+			<?php
 			$marques = $DB->query('SELECT * FROM marque');
 			$initiales = array(26);
 			$lettreMarque = array(26);
@@ -62,9 +61,9 @@ require 'header.php'
 					$initiale= chr($i);
 					$lettreMarque[$i] = 0;
 					$initiales[$i]=$initiale;
-					
+
 					foreach ( $marques as $marque ):
-						if (initiales($marque->NOM)==$initiale) { 
+						if (initiales($marque->NOM)==$initiale) {
 						 $lettreMarque[$i] ++ ;
 						} endforeach ;
 			}
@@ -77,17 +76,17 @@ require 'header.php'
 					<?=$initiale;?>
 					</div>
 					<div class="wrapbox">
-					<?php 
+					<?php
 						foreach ( $marques as $marque ):
-						if (initiales($marque->NOM)==$initiale) {  
-						
+						if (initiales($marque->NOM)==$initiale) {
+
 						$sql = "SELECT * FROM marque WHERE NOM ='" . $marque->NOM . "'";
 						//var_dump($sql);
 						$sth = $DB->query($sql);
 						?>
 								<div class="box">
 									<?= '<img class="thumb" src="data:image/jpeg;base64,'.base64_encode($sth[0]->IMAGE ).'" onclick="openNav(this,\''.$sth[0]->NOM.'\')";/>'; ?>
-										
+
 										<!-- The overlay -->
 										<div id="myNav" class="overlay">
 
@@ -101,7 +100,7 @@ require 'header.php'
 										</div>
 
 									<!--<div class="NOM">
-										<?= $marque->NOM; ?> 
+										<?= $marque->NOM; ?>
 									</div>	-->
 								</div>
 					<?php } endforeach ?>
@@ -110,7 +109,7 @@ require 'header.php'
 			<?php
 			}
 			?>
-			
+
 		</div>
 
 		<script>
@@ -157,8 +156,8 @@ require 'header.php'
 		    document.getElementById("myNav").style.width = "0%";
 		    $("#main").show();
 
-		} 
-	
+		}
+
 		</script>
 
 <footer>
@@ -204,10 +203,10 @@ require 'header.php'
       <li><a id="Mentions" href="../mentions_legales.html">Mentions légales</a></li>
     </ul>
     <ul>
-      <li>©2016-2016 Pharmacie St Ferréol</li>
+      <li>©2016-2017 Pharmacie St Ferréol</li>
     </ul>
     <ul>
-      <li>Nous contacter</li>
+      <li><a id="Mentions" href="../ContactUs/ContactUs.php">Nous contacter</a></li>
     </ul>
   <div>
 </div>

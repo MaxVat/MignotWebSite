@@ -12,7 +12,6 @@
       <div id="header">
         <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510)</p>
         <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
-        <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
         <i class="fa fa-envelope-open-o fa-2x fa-fw" aria-hidden="true"></i>
       </div>
 
@@ -23,7 +22,7 @@
         <li> <a id="Acceuil" href="../index.html">Acceuil</a></li>
         <li><a id="equipe" href="../equipe.html">équipe</a></li>
         <li><a id="Planning" href="../Planning/planning.php">Planning</a></li>
-        <li>Marques</li>
+        <li><a id="Planning" href="../Marques/marques.php">Marques</a></li>
         <li>Services
           <ul class="drop">
             <div>
@@ -92,9 +91,9 @@
               <p id="p2">Pharmacie Saint Férréol<br>1 Avenue de Toulon<br>83510 Lorgues<br><br>Téléphone: 04 94 73 72 97<br>Fax: 04 94 84 36 48<br>Email: pharmacie-stferreol@outlook.fr</p>
               <div id="block2">
                 <ul>
-                  <li>Ordonnance en ligne</li>
-                  <li>Livraison à domicile</li>
-                  <li>Service de garde</li>
+                  <li><a href="../services/ordonnance.html">Ordonnance en ligne</a></li>
+                  <li><a href="../services/livraison.html">Livraison à domicile</a></li>
+                  <li><a href="../services/garde.html">Service de garde</a></li>
                 </ul>
               </div>
           <div id="Gmap">
@@ -130,7 +129,7 @@
             <li>©2016-2017 Pharmacie St Ferréol</li>
           </ul>
           <ul>
-            <li><a id="Mentions" href="ContactUs/ContactUs.php">Nous contacter</li>
+            <li><a id="Mentions" href="../ContactUs/ContactUs.php">Nous contacter</li>
           </ul>
         <div>
       </div>

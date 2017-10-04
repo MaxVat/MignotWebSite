@@ -10,11 +10,9 @@ require 'header.php'
     </head>
 
     <nav>
-
       <div id="header">
         <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510) </p>
           <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
-          <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
           <i class="fa fa-envelope-open-o fa-2x fa-fw" aria-hidden="true"></i>
       </div>
 
@@ -24,9 +22,9 @@ require 'header.php'
       <ul id="main">
         <li> <a id="Acceuil" href="../index.html">Acceuil</a></li>
         <li><a id="equipe" href="../equipe.html">équipe</a></li>
-        <li><a id="Planning" href="#">Planning</a></li>
-        <li>Marques</li>
-        <li>Services
+        <li><a id="Planning" href="../Planning/planning.php">Planning</a></li>
+        <li><a id="Marques" href="../Marques/marques.php">Marques</a></li>
+        <li id="Services">Services
           <ul class="drop">
             <div>
             <li><a href="../services/ordonnance.html">Ordonnance en ligne</a></li>
@@ -41,6 +39,7 @@ require 'header.php'
         <div id="marker"></div>
       </ul>
     </nav>
+
     <?php
     $semainep=$nb_semaines%2;
       if ($semainep==0){
@@ -118,13 +117,13 @@ require 'header.php'
    <tr class="ferme">
       <td >13:00</td>
       <td></td>
-      <td ></td> 
+      <td ></td>
       <td ></td>
       <td ></td>
       <td ></td>
       <td ></td>
 
-    </tr> 
+    </tr>
     <tr class="ouvert">
       <td >14:30</td>
       <td class="ouvert"></td>
@@ -143,8 +142,8 @@ require 'header.php'
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
- 
-    </tr> 
+
+    </tr>
     <tr class="ouvert">
       <td >16:00</td>
       <td class="ouvert"></td>
@@ -153,8 +152,8 @@ require 'header.php'
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
- 
-    </tr> 
+
+    </tr>
     <tr class="ouvert">
       <td >17:00</td>
       <td class="ouvert"></td>
@@ -163,9 +162,9 @@ require 'header.php'
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
- 
-    </tr> 
-    
+
+    </tr>
+
     <tr class="ouvert">
       <td >18:00</td>
       <td class="ouvert"></td>
@@ -174,7 +173,7 @@ require 'header.php'
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
- 
+
     </tr>
     <tr class="ouvert">
       <td >19:00</td>
@@ -268,13 +267,13 @@ elseif ($semainep==1){
    <tr class="ferme">
       <td>13:00</td>
       <td></td>
-      <td></td> 
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
 
-    </tr> 
+    </tr>
     <tr>
       <td>14:30</td>
       <td class="ouvert"></td>
@@ -293,11 +292,11 @@ elseif ($semainep==1){
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ferme"></td>
- 
-    </tr> 
-    
+
+    </tr>
+
     <tr>
-    
+
       <td>16:00</td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
@@ -305,10 +304,10 @@ elseif ($semainep==1){
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ferme"></td>
- 
+
     </tr>
      <tr>
-    
+
       <td>17:00</td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
@@ -316,10 +315,10 @@ elseif ($semainep==1){
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ferme"></td>
- 
+
     </tr>
      <tr>
-    
+
       <td>18:00</td>
       <td class="ouvert"></td>
       <td class="ouvert"></td>
@@ -327,7 +326,7 @@ elseif ($semainep==1){
       <td class="ouvert"></td>
       <td class="ouvert"></td>
       <td class="ferme"></td>
- 
+
     </tr>
 
     <tr>
@@ -336,22 +335,22 @@ elseif ($semainep==1){
 
   </tbody>
 </table>
-<?php 
+<?php
   }
 ?>
 <div class="semaines">
-  <?php  
-  for ($i=0; $i < 4; $i++) { 
+  <?php
+  for ($i=0; $i < 4; $i++) {
   ?>
     <div class="semaine">
         <div class="text">
-          <a href="planning.php?date=<?= $semaine_nav->format('Y-m-d'); ?>"> 
+          <a id="text" href="planning.php?date=<?= $semaine_nav->format('Y-m-d'); ?>">
           <?= "Lundi ",$semaine_nav->format('d-m-Y');?>
           </a>
         </div>
     </div>
   <?php
-  $semaine_nav=$semaine_nav->add(new DateInterval('P7D')); 
+  $semaine_nav=$semaine_nav->add(new DateInterval('P7D'));
   }
   ?>
 </div>
@@ -399,10 +398,10 @@ elseif ($semainep==1){
       <li><a id="Mentions" href="../mentions_legales.html">Mentions légales</a></li>
     </ul>
     <ul>
-      <li>©2016-2016 Pharmacie St Ferréol</li>
+      <li>©2016-2017 Pharmacie St Ferréol</li>
     </ul>
     <ul>
-      <li>Nous contacter</li>
+      <li><a id="Mentions" href="../ContactUs/ContactUs.php">Nous contacter</li>
     </ul>
   <div>
 </div>
