@@ -373,12 +373,10 @@ elseif ($semainep==1){
       <script>
       function initMap() {
         var myLatLng = {lat: 43.493127, lng: 6.358338};
-
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 10,
           center: myLatLng
         });
-
         var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
@@ -408,4 +406,4 @@ elseif ($semainep==1){
 
 </footer>
 
-</html>
+</html> 
