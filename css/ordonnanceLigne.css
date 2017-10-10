@@ -11,6 +11,11 @@ body {
   text-align: center;
 }
 
+#facebookLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 #textBody {
   text-align: left;
 }
@@ -1046,7 +1051,7 @@ div.semaines div.semaine div.text {
 
 .infoAppli {
   position: absolute;
-  padding-top: 490px;
+  margin-top: 490px;
   text-align: left;
 }
 

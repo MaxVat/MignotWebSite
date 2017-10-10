@@ -11,6 +11,11 @@ body {
   text-align: center;
 }
 
+#facebookLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 #headerText {
   position: absolute;
   font-family: 'Open Sans', sans-serif;

@@ -1,6 +1,7 @@
 <?php
 require 'header.php'
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -12,7 +13,7 @@ require 'header.php'
     <nav>
       <div id="header">
         <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510) </p>
-          <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
+        <a id="facebookLink" href="https://www.facebook.com/pharmaciesaintferreol/"><i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i></a>
           <i class="fa fa-envelope-open-o fa-2x fa-fw" aria-hidden="true"></i>
       </div>
 
@@ -406,4 +407,4 @@ elseif ($semainep==1){
 
 </footer>
 
-</html> 
+</html>

@@ -3,7 +3,7 @@ require 'db.class.php';
 $DB = new DB();
 $alphabet = array();
 $date = date("d-m-Y");
-$heure = date("H:i"); 
+$heure = date("H:i");
 $depart = new DateTime('2017-04-24 00:00:00');
 
 
@@ -13,23 +13,22 @@ $depart = new DateTime('2017-04-24 00:00:00');
 			$aujourdhui = new DateTime($date. '00:00:00');
 		}
 	else
-		{	
+		{
 			$aujourdhui = new DateTime();
 		}
 
-	
+
 /* Pour l'affichage de la semaine demandée, par défaut la semaine d'aujourdhui */
 
 $diff = $depart->diff($aujourdhui);  /*difference entre Lundi 25 avril et aujourdhui*/
 
 $nb_jours = $diff->format('%a'); /*a : nombre total en jours*/
-echo $nb_jours;
 
 $nb_semaines=intval($nb_jours/7); /*nombre de semaines (partie entiere)*/
 
 $semaine= clone $depart; /*clone copie le même type d'objet*/
 
-$lundi=$nb_semaines*7; 
+$lundi=$nb_semaines*7;
 
 $semaine = $semaine->add(new DateInterval('P'.$lundi .'D'));
 
@@ -46,6 +45,6 @@ $nb_semaines_nav=intval($nb_jours_nav/7); /*nombre de semaines (partie entiere)*
 
 $semaine_nav= clone $depart; /*clone copie le même type d'objet*/
 
-$lundi2=$nb_semaines_nav*7; 
+$lundi2=$nb_semaines_nav*7;
 
 $semaine_nav = $semaine_nav->add(new DateInterval('P'.$lundi2 .'D'));

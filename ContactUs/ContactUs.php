@@ -11,7 +11,7 @@
 
       <div id="header">
         <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510)</p>
-        <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
+        <a id="facebookLink" href="https://www.facebook.com/pharmaciesaintferreol/"><i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i></a>
         <i class="fa fa-envelope-open-o fa-2x fa-fw" aria-hidden="true"></i>
       </div>
 
