@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Contact</title>
+        <title>Contact - Pharmacie Saint Ferréol</title>
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="../css/ContactUs.css" />
         <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
@@ -19,7 +20,7 @@
       <img id="logoCroix" src="../img/logoCroix200px.png" />
 
       <ul id="main">
-        <li> <a id="Acceuil" href="../index.html">Acceuil</a></li>
+        <li> <a id="Accueil" href="../index.html">Accueil</a></li>
         <li><a id="equipe" href="../equipe.html">équipe</a></li>
         <li><a id="Planning" href="../Planning/planning.php">Planning</a></li>
         <li><a id="Planning" href="../Marques/marques.php">Marques</a></li>

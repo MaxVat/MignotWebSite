@@ -5,8 +5,9 @@ require 'header.php'
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Pharmacie Lorgues</title>
-        <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+        <title>Planning - Pharmacie Saint Ferréol</title>
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="../css/planning.css" />
           <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
 
@@ -21,7 +22,7 @@ require 'header.php'
       <img id="logoCroix" src="../img/logoCroix200px.png" />
 
       <ul id="main">
-        <li> <a id="Acceuil" href="../index.html">Acceuil</a></li>
+        <li> <a id="Accueil" href="../index.html">Accueil</a></li>
         <li><a id="equipe" href="../equipe.html">équipe</a></li>
         <li><a id="Planning" href="../Planning/planning.php">Planning</a></li>
         <li><a id="Marques" href="../Marques/marques.php">Marques</a></li>
