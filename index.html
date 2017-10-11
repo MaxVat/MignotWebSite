@@ -2,10 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Accueil - Pharmacie Saint Ferréol</title>
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="css/w3.css">
         <script src="myScript.js"></script>
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
@@ -13,13 +15,13 @@
 
     <nav>
       <div id="header">
-        <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510) </p>
-          <a id="facebookLink" href="https://www.facebook.com/pharmaciesaintferreol/"><i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i></a>
-          <i class="fa fa-envelope-open-o fa-2x fa-fw" aria-hidden="true"></i>
+        <div id="headerTextArea">
+          <p id="headerText">Votre Pharmacie de Lorgues situé dans le Var (83510) <a id="facebookLink" href="https://www.facebook.com/pharmaciesaintferreol/"><i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i></a></p>
+
+        </div>
       </div>
 
-      <img id="logo" src="img/logoPharmacie.jpg" />
-      <img id="logoCroix" src="img/logoCroix200px.png" />
+      <img id="logo" src="img/logoHeader.png"/>
 
       <ul id="main">
         <li> <a id="Accueil" href="index.html">Accueil</a></li>
@@ -163,16 +165,23 @@
         <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
     </div>
 
-<div id="topMarques">
+<!-- <div id="topMarques">
   NOS TOP MARQUES
 </div>
 <div id="marquesContainer">
-  <div id="logosMarques"><img src="img/allLogos2.png" /></div>
+  <picture>
+  <source srcset="img/appStore.jpg" media="(max-width: 400px)">
+  <img src="img/allLogos2.png" style="width:auto;">
+</picture>
+</div> -->
+
+
+<div class="w3-container w3-teal">
+  <h1><FONT color=black>NOS TOP MARQUES</FONT></h1>
 </div>
-
-<div id="midContainer">
-
-  <div id="treeFooter"> <img src="img/treeFooter.png" /> </div>
+<img id="imgLogos" src="img/allLogos2.png" alt="Logos">
+<div class="mainContainer">
+<div class="w3-container">
   <p>
   <FONT color=#3E8760 size="5px">Votre pharmacie St Ferréol</FONT><br><br>
   Située au 1, Avenue de Toulon dans la ville de Lorgues, la Pharmacie St Ferréol vous accueille et vous présente un large choix de produits de pharmacie et de parapharmacie.<br>
@@ -186,6 +195,10 @@
   Ouverte du Lundi au Samedi de 8h45 a 19h.<br>
   Voir notre <strong><a id="redirect_planning" href="Planning/planning.php">planning</strong></a>.</p>
 </div>
+</div>
+<img id="treeFooter" src="img/tree2.png"/>
+
+
 <footer>
 
 <div id="footer-info">
