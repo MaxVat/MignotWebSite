@@ -43,11 +43,28 @@
 
       <body>
         <div class="container">
+        <?php 
+        if (!isset($_SESSION)){
+          session_start();
+          if(isset($_SESSION['ERROR'])){
+            echo " <div class= \"row check_mail error \">";
+            foreach($_SESSION['ERROR'] as $error) echo $error . "<br/>";
+            echo "</div>";
+          }
+          else if (isset($_SESSION['SUCCESS'])){
+            echo " <div class= \"row check_mail success \">";
+            echo $_SESSION['SUCCESS'];
+            echo "</div>";
+          }
+          unset($_SESSION);
+          session_destroy();
+        }
+        ?>
           <div class="row header">
             <h1></h1>
           </div>
           <div class="row body">
-            <form action="#" method="POST">
+            <form action="Contact_mail.php" method="POST">
               <ul>
 
                 <li>
