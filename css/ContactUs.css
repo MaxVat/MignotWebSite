@@ -298,6 +298,16 @@ div, textarea, input {
   margin: 0 0 1em 0;
   padding: 0 2.5em;
 }
+.row.check_mail.error{
+  height: 100px;
+  border-bottom: 1px solid #ccc;
+  color: red;
+}
+.row.check_mail.success{
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  color: green;
+}
 .row.header {
   min-height: 200px;
   border-bottom: 1px solid #ccc;
